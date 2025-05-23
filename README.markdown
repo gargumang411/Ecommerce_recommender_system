@@ -148,21 +148,6 @@ These results indicate training challenges (e.g., hitting local minima), which p
 [Airflow (Retraining)] --> [Spark Training Cluster]
 ```
 
-### Mermaid Diagram
-```mermaid
-graph TD
-    A[Users] --> B[Load Balancer (AWS ELB)]
-    B --> C[API Gateway]
-    C --> D[Inference Service (AWS EC2 + NVIDIA Triton)]
-    C --> E[Redis Cache]
-    D --> E
-    D --> F[Cassandra DB]
-    E --> G[Prometheus/Grafana]
-    F --> G
-    F --> H[Kafka (Feedback Loop)]
-    H --> I[Airflow (Retraining)]
-    I --> J[Spark Training Cluster]
-```
 
 ### System Architecture Table
 | Component            | Technology                        | Purpose                          | Non-Functional Requirement       |
