@@ -1,7 +1,7 @@
 # E-Commerce Recommendation System
 
 ## Project Overview
-This project implements a prototype recommendation system for an e-commerce platform using a two-tower collaborative filtering model. Built with PyTorch and trained on the [Amazon Electronics 5-core dataset](https://nijianmo.github.io/amazon/index.html) (~6.7M reviews, ~72,678 users, 159,748 items), the system delivers personalized product recommendations. It supports multiple recommendation types (personalized, popularity-based, trend-based) using aggregated features to enhance training stability. The system is designed to meet non-functional requirements including scalability, low latency, high availability, security, maintainability, cost-effectiveness, efficient paging, and continuous monitoring, with robust tooling for development and deployment.
+This project implements a recommendation system for an e-commerce platform using a two-tower collaborative filtering model. Built with PyTorch and trained on the [Amazon Electronics 5-core dataset](https://nijianmo.github.io/amazon/index.html) (~6.7M reviews, ~72,678 users, 159,748 items), the system delivers personalized product recommendations. It supports multiple recommendation types (personalized, popularity-based, trend-based) using aggregated features to enhance training stability. The system is designed to meet non-functional requirements including scalability, low latency, high availability, security, maintainability, cost-effectiveness, efficient paging, and continuous monitoring, with robust tooling for development and deployment.
 
 ## Dataset
 The Amazon Electronics 5-core dataset contains ~6.7M user reviews for electronic products, ensuring each user and item has at least 5 interactions. Preprocessing steps include:
