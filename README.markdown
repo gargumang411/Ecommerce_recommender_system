@@ -145,10 +145,8 @@ The system minimizes costs for 1M users and 10M items while maintaining performa
 - **Precision@10**: 0.0110
 These results indicate training challenges with limited compute resources and in finding a good dataset for the purpose since real ecommerce interaction datasets aren't open-source. Planned enhancements aim to address these.
 
-## Future Work
-- Refine preprocessing with raw ratings or binary labels.
+## Potential Improvements
 - Enhance model with deeper layers, alternative loss functions (e.g., BPR), and regularization.
-- Implement Kafka for real-time feedback and hybrid inference.
 - Deploy on AWS with A/B testing, continuous monitoring, and content-based cold-start strategies.
 
 ## System Design Diagram
