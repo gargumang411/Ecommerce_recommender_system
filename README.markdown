@@ -150,18 +150,5 @@ These results indicate training challenges with limited compute resources and in
 - Deploy on AWS with A/B testing, continuous monitoring, and content-based cold-start strategies.
 
 ## System Design Diagram
-```
-[Users] --> [Load Balancer (AWS ELB)]
-                |           |
-                v           v
-             [API Gateway] --> [Inference Service (AWS EC2 + NVIDIA Triton)]
-                  |                   |
-                  v                   v
-              [Redis Cache]         [Cassandra DB]
-                  |                   |
-                  v                   v
-              [Prometheus/Grafana]  [Kafka (Feedback Loop)]
-                    |                   |
-                    v                   v
-            [Airflow (Retraining)] --> [Spark Training Cluster]
-```
+
+![System Design](assets/ecommerce_recommender_system_design.png)
