@@ -36,9 +36,12 @@ The system supports:
 - **For New Items**: Incorporate item metadata (e.g., category, price, product description, seller rating) to create item embeddings using a pre-trained Encoder only transformer like Sentence-BERT (SBERT) model and match with others products embeddings (created in the same way) and then recommend to similar users to whom we recommend other similar products to gain initial data before adding it to the two-tower model training.
 
 
-## System Design
-The system is architected to meet production-level non-functional requirements.
 
+## System Design
+The system is architected to meet production-level non-functional requirements:
+
+#Diagram
+![System Design](assets/ecommerce_recommender_system_design.png)
 
 #### Scalability
 The system scales for ~1M active users, 10M items (with images and videos), with 5% monthly growth. Capacity estimation for Year 1:
@@ -149,6 +152,3 @@ These results indicate training challenges with limited compute resources and in
 - Enhance model with deeper layers, alternative loss functions (e.g., BPR), and regularization.
 - Deploy on AWS with A/B testing, continuous monitoring, and content-based cold-start strategies.
 
-## System Design Diagram
-
-![System Design](assets/ecommerce_recommender_system_design.png)
