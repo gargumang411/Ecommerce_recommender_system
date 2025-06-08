@@ -40,7 +40,7 @@ The system supports:
 ## System Design
 The system is architected to meet production-level non-functional requirements:
 
-#Diagram
+### Design Diagram
 ![System Design](assets/ecommerce_recommender_system_design.png)
 
 #### Scalability
