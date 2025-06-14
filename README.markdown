@@ -119,7 +119,7 @@ The system minimizes costs for 1M users and 10M items while maintaining performa
 - **Embedding Management**: Precompute item embeddings (stored in Cassandra) and cache user embeddings in Redis for real-time updates.
 
 
-## Tooling
+## Tech Stack
 - **Machine Learning**: PyTorch for model development.
 - **Data Processing**: Pandas and NumPy for preprocessing.
 - **Cloud Platform**: AWS for production deployment, Google Colab for initial prototyping.
